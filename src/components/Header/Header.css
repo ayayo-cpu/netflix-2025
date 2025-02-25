@@ -1,0 +1,43 @@
+.headerOuterContainer {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Initially transparent */
+  height: 8vh;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out; /* Smooth transition */
+  z-index: 1;
+}
+
+.headerOuterContainer.scrolled {
+  background-color: rgb(20, 20, 20); /* Background color on scroll */
+  background-color: #211F20; /* Background color on scroll */
+}
+
+img {
+  /* max-height: 22px; */
+  border: 1px solid black; 
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  cursor: pointer;
+}
+.headerLeft ul {
+  align-items: center;
+}
+
+.headerLeft ul li:nth-child(1) img {
+  border: 1px solid #c7c7c700;
+  box-sizing: border-box;
+  max-width: 60%;
+} 
